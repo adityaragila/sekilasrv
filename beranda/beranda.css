@@ -1,0 +1,132 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+    background: #171A21;
+    color: white;
+}
+
+.hero-container {
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 25px;
+    background-color: #171A21;
+}
+
+.tech-grid,
+.abstract-circle {
+    display: none;
+}
+
+.role-card {
+    width: 100%;
+    max-width: 720px;
+    padding: 40px;
+    text-align: center;
+    border: 1px solid #1877F2;
+    border-radius: 24px;
+}
+
+.title {
+    font-size: 34px;
+    font-weight: 700;
+    margin-bottom: 20px;
+}
+
+.title span {
+    color: #1877F2;
+}
+
+.card-header {
+    margin-bottom: 25px;
+}
+
+.tech-tag {
+    display: inline-block;
+    padding: 8px 15px;
+    font-size: 17px;
+    color: white;
+    border-radius: 20px;
+}
+
+.subtitle {
+    color: white;
+    font-size: 17spx;
+    margin-bottom: 25px;
+}
+
+.button-group {
+    display: flex;
+    gap: 15px;
+}
+
+.role-btn {
+    flex: 1;
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    padding: 20px;
+    text-align: left;
+    text-decoration: none;
+    color: white;
+    background: #222;
+    border: 1px solid #383838;  
+    border-radius: 16px;
+    transition: 0.25s ease;
+}
+
+.role-btn:hover {
+    border-color: #1877F2;
+}
+
+.icon-wrapper {
+    width: 52px;
+    height: 52px;
+    flex-shrink: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 23px;
+    background: white;
+    border-radius: 12px;
+}
+
+.btn-text {
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+}
+
+.btn-label {
+    font-size: 16px;
+    font-weight: 600;
+}
+
+.btn-sub {
+    font-size: 14px;
+    color: darkgray;
+}
+
+@media (max-width: 600px) {
+    .role-card {
+        padding: 30px 20px;
+    }
+
+    .title {
+        font-size: 27px;
+    }
+
+    .button-group {
+        flex-direction: column;
+    }
+
+    .role-btn {
+        padding: 16px;
+    }
+}
